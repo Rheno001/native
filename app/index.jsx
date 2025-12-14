@@ -3,9 +3,12 @@ import React from 'react'
 import logo from '../assets/favicon.png'
 import {Link} from 'expo-router'
 
+//themed components
+import ThemedView from '../components/ThemedView'
+
 const Home = () => {
     return (
-        <View style={styles.container}>
+        <ThemedView style={styles.container}>
             <Image source={logo} style={styles.image}/> 
             <Text style={styles.title}>The number 1</Text>
             <Text style={{ marginTop: 10, marginBottom: 30 }}>
@@ -16,7 +19,7 @@ const Home = () => {
             </View>
             <Link href='/about'>About Page</Link>
             <Link href='/contact'>Contact Page</Link>
-        </View>
+        </ThemedView>
 
     )
 }
